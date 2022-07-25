@@ -1,6 +1,7 @@
 # vue-bootstrap-template
 
 ## Project setup
+Download the latest release, and change the directory to it. Run the following instructions.
 ```
 npm install
 ```
@@ -9,7 +10,7 @@ npm install
 ```
 npm run serve
 ```
-If you see an `Success` button, the config is fine. Change the name for your project in https://github.com/awxiaoxian2020/vue-bootstrap-template/blob/master/package.json. Just do for it.
+If you see an `Success` button, the config is fine. Change the name for your project in [package.json](https://github.com/awxiaoxian2020/vue-bootstrap-template/blob/master/package.json). Just do for it.
 
 ### Compiles and minifies for production
 ```
