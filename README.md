@@ -9,7 +9,7 @@ npm install
 ```
 npm run serve
 ```
-If you see an `Success` button, the config is fine. Just do for it.
+If you see an `Success` button, the config is fine. Change the name for your project in https://github.com/awxiaoxian2020/vue-bootstrap-template/blob/master/package.json. Just do for it.
 
 ### Compiles and minifies for production
 ```
