@@ -9,6 +9,7 @@ npm install
 ```
 npm run serve
 ```
+If you see an `Success` button, the config is fine. Just do for it.
 
 ### Compiles and minifies for production
 ```
