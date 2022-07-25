@@ -1,7 +1,7 @@
 # vue-bootstrap-template
 
 ## Project setup
-Download the latest release, and change the directory to it. Run the following instructions.
+Download the latest [release](https://github.com/awxiaoxian2020/vue-bootstrap-template/releases), and change the directory to it. Run the following instructions.
 ```
 npm install
 ```
