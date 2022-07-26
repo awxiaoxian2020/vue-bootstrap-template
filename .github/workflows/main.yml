@@ -1,6 +1,5 @@
 on:
-  schedule:
-  - cron: "5 4 * * 0" # https://crontab.guru/#5_4_*_*_0
+  pull_request: 
 name: Weekly Pull Request Closure
 jobs:
   weekly-pull-requests-close:
