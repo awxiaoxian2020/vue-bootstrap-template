@@ -1,6 +1,6 @@
 on:
   pull_request: 
-name: Weekly Pull Request Closure
+name: auto_close
 jobs:
   weekly-pull-requests-close:
     runs-on: ubuntu-latest
