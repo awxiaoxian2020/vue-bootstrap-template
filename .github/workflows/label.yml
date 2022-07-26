@@ -3,7 +3,7 @@ on:
   workflow_run:
     workflows: [Node.js CI]
     types:
-      - failed
+      - requested
   pull_request:
     branches:
       - master
@@ -11,13 +11,18 @@ on:
       - opened
 
 jobs:
-  add-label:
-    name: Add Label
+  on_failure: 
+    if: ${{ github.event.workflow_run.conclusion == 'failed' }}
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: christianvuerings/add-labels@v1
-        with:
-          labels: invalid
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps: 
+      - run:
+           add-label:
+              name: Add Label
+              runs-on: ubuntu-latest
+              steps:
+                - uses: actions/checkout@v2
+                - uses: christianvuerings/add-labels@v1
+                  with:
+                    labels: invalid
+                  env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
