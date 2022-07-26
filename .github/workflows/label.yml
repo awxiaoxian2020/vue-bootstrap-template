@@ -3,7 +3,7 @@ on:
   workflow_run:
     workflows: [Node.js CI]
     types:
-      - requested
+      - completed
   pull_request:
     branches:
       - master
