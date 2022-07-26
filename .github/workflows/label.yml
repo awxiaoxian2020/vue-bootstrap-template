@@ -15,11 +15,6 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'failed' }}
     runs-on: ubuntu-latest
     steps: 
-      - run:
-           add-label:
-              name: Add Label
-              runs-on: ubuntu-latest
-              steps:
                 - uses: actions/checkout@v2
                 - uses: christianvuerings/add-labels@v1
                   with:
