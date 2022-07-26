@@ -1,5 +1,9 @@
 name: Add Label
 on:
+  workflow_run:
+    workflows: [Node.js CI]
+    types:
+      - failed
   pull_request:
     branches:
       - master
