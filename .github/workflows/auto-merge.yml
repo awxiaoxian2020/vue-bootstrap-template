@@ -1,9 +1,11 @@
-name: auto-merge
-on: [pull request]
+name: learn-github-actions
+on: pull_request
 jobs:
-  - name: Merge
-      uses: KeisukeYamashita/auto-pull-request-merge@v1
-      with:
-        intervalSeconds: 10
-        timeoutSeconds: 30
-  
+  auto-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: KeisukeYamashita/auto-pull-request-merge@v1
+        with: 
+          intervalSeconds: 10
+          timeoutSeconds: 30
+       
