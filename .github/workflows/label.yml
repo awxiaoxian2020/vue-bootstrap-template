@@ -1,0 +1,23 @@
+name: Add Label
+on:
+  workflow_run:
+    workflows: [Node.js CI]
+    types:
+      - failed
+  pull_request:
+    branches:
+      - master
+    types:
+      - opened
+
+jobs:
+  add-label:
+    name: Add Label
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: christianvuerings/add-labels@v1
+        with:
+          labels: invalid
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
