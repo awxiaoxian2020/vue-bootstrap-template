@@ -2,6 +2,6 @@
   <router-view/>
 </template>
 
-<style>
+<styl>
 
 </style>
