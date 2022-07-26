@@ -2,7 +2,7 @@ on:
   pull_request: 
 name: auto_close
 jobs:
-  weekly-pull-requests-close:
+  close:
     runs-on: ubuntu-latest
     steps:
     - name: weekly-pull-requests-closure
